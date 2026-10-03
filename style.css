@@ -1,0 +1,39 @@
+body {
+    font-family: 'Geist Pixel', sans-serif;
+    margin-top: 0px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.socials {
+    align-items: center;
+}
+.socials img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.1s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.info containerdiv {
+    align-self: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+.highWidth {
+    min-width: 500px;
+}

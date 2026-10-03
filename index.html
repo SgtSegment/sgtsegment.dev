@@ -1,4 +1,40 @@
-<title>my awesome website</title>
+<!DOCTYPE html>
 
-<h1>I don't have a use for this domain yet...</h1>
-<button onclick="window.location.href='https://bsky.app/profile/sgtsegment.dev'">bluesky</button>
+<head>
+    <title>Sgt's Cool Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>hello, i'm sgt!</h1>
+    <p>current favorite song: <a href="https://www.youtube.com/watch?v=cY0qV7q9IC4">clover - FLAVOR FOLEY</a></p>
+    <div class="socials">
+        <img src="./imgs/discord.png" onclick="window.open('https://discord.com/users/1346945219886579753')">
+        <img src="./imgs/bluesky.png" onclick="window.open('https://bsky.app/profile/sgtsegment.dev')">
+        <img src="./imgs/roblox.png" onclick="window.open('https://www.roblox.com/users/4796761420/profile')">
+    </div>
+    <br>
+    <div class="info">
+        <!--    if your snooping around, i dont know much about css and this felt easier than weird css stuff w/ the bsky embed    -->
+        <containerdiv>
+            <link rel="stylesheet" href="https://embedbsky.com/embedbsky.com-master-min.css" />
+            <div id="embedbsky-com-timeline-embed" class="darkmode hasfooter"></div>
+            <script>let containerWidth=400,containerHeight=300;const getHtml=async t=>{const e=await fetch(t);return 200!==e.status?'<p><strong>No feed data could be located</p></strong>':e.text()};document.addEventListener('DOMContentLoaded',(async()=>{const t=(new Date).toISOString(),e=document.getElementById('embedbsky-com-timeline-embed');e.style.width=`${containerWidth}px`,e.style.height=`${containerHeight}px`;const n=await getHtml(`https://embedbsky.com/feeds/f5a803ee79bb643a18c81f4188a0b4ba813835592bd87eda129cbc8f448451c2.html?v=${t}`);e.innerHTML=n}));</script>
+        </containerdiv>
+        <containerdiv class="highWidth">
+            <h3>currently working on:</h3>
+            <p>
+                    - (roblox) racing game with random events and other stuff<br>
+                    - nothing else
+            </p>
+        </containerdiv>
+        <containerdiv>
+            <iframe width="410" height="210" src="https://lanyard.cnrad.dev/api/1346945219886579753?showDisplayName=true&idleMessage=Doing%20nothing..."></iframe>
+        </containerdiv>
+    </div>
+    <p>more coming to the website soon (maybe)...</p>
+    <p>email: <a href="mailto:sgt@sgtsegment.dev">sgt@sgtsegment.dev</a></p>
+</body>
